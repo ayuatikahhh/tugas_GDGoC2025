@@ -1,0 +1,666 @@
+@import url('https://fonts.googleapis.com/css2?family=Montstreet:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin : 0;
+    padding :0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border :none;
+    outline : none;
+    scroll-behavior: smooth;
+    font-family: 'montstreet', sans-serif;
+}
+
+:root {
+    --bg-color: #FAFAFA;
+    --text-one-color:#252B42;
+    --text-two-color:#BDBDBD;
+    --text-three-color:#FFFFFF;
+    --text-four-color:#23A6F0;
+    --text-five-color:#858585;
+    --text-price-color: #23A6F0;
+    --text-six-color:#737373;
+    --bg-navbar-top-color: #23856D;
+}
+html {
+    font-size : 62.5%;
+    overflow-x: hidden;
+}
+
+
+body {
+    font-family: sans-serif;
+    background: var(--bg-color);
+    text-decoration: none;
+
+}
+
+.navbarLight{
+    background: var(--text-three-color);
+    font-size: 14px;
+    padding : 9px;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    
+}
+
+.icon-menu{
+    color: var(--bg-color);
+    font-size: 25px;
+    margin-left: 30px;
+    cursor: pointer;
+    
+
+}
+
+.header{
+    background : var(--bg-navbar-top-color);
+    font-family: 'montstreet', sans-serif;
+    text-decoration: none;
+    
+   
+}
+
+.navbarDark{
+    background: var(--bg-navbar-top-color);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: var(--bg-color);
+    text-decoration: none;
+    width: 100%;
+}
+
+.phone{
+    margin-right : 40px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    font-size: 11px;
+    text-decoration: none;
+
+}
+.phone a:hover,
+.phone a:visited{
+    color:var(--bg-color)
+}
+.email{
+    margin-right : 40px;
+    line-height: 16px;
+    letter-spacing: 0.2px; 
+    font-size: 11px;
+    text-decoration: none;
+}
+.email a:hover,
+.email a:visited{
+    color:var(--bg-color)
+}
+
+.follow{
+    margin-right : 40px;
+    letter-spacing: 0.2px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.medsos{
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+
+   
+}
+.medsos h6{
+    font-weight: bold;
+}
+.logoMedsos{
+    margin : 10px;
+    letter-spacing: 0.2px;
+    font-size: 14px;
+}
+.logoMedsos i{
+    margin: 5px;
+}
+.medsos h6{
+    font-size: 14px;
+}
+
+.bandage{
+    color: var(--text-one-color);
+    margin: 10px;
+    margin-right:100px;
+    font-size: 14px;
+    
+
+
+}
+.menu{
+    color: var(--text-six-color);
+    font-size: 14px;
+    margin: 10px;
+    margin-right: 100px;
+    letter-spacing: 0.2px;
+    font-weight: bold;
+
+}
+.menu a{
+    margin: 10px;
+}
+.menu a:hover,
+.menu a:visited{
+    color:var(--text-six-color)}
+
+
+.user{
+    color: var(--text-four-color);
+    font-size: 14px;
+    margin: 10px;
+    margin-right: 10px;
+}
+.user a:hover,
+.user a:visited{
+    color:var(--text-four-color)}
+
+.search{
+    color: var(--text-four-color);
+    font-size: 14px;
+    margin: 10px;
+}
+.cart{
+    color: var(--text-four-color);
+    font-size: 14px;
+    margin: 10px;
+}
+.heart{
+    color: var(--text-four-color);
+    font-size: 14px;
+    margin: 10px;
+}
+
+.container{
+    margin-left: 1000px;
+    color: var(--text-one-color);
+    display: flex;
+    align-items: center;
+}
+.container a:hover,
+.container a:visited{
+    color:var(--text-one-color);
+}
+
+.container i{
+    font-size: 25px;
+    color: var(--text-two-color);
+    
+}
+.container h6{
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    color: var(--text-two-color);
+}
+.container a{
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 90px;
+}
+
+.title{
+    font-weight: bold;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.carousel{
+    margin-left: 160px;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+.thumbnail .active {
+    opacity: 0.5;
+}
+
+.thumbnail{
+    margin-left: 160px;
+    margin-top: 10px;
+    display: flex;
+}
+.d-block1{
+    margin-left: 10px;
+}
+
+.keterangan-inti{
+    margin-left: 0px;
+    margin-top: 20px;
+}
+
+.tengah{
+    display: flex;
+    align-items: center;
+}
+
+.star-isi i{
+    color: #F3CD03;
+    margin-right: 1px;
+}
+.star{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    font-size: 16px;
+}
+.star-isi{
+    margin-right: 10px;
+}
+
+.rvw h6{
+    color :#737373;
+    font-size: 14px;
+    font-weight: bold;
+}
+.harga h3{
+    font-weight: bold;
+    margin-top: 20px;
+    color: #252B42;
+}
+.stock{
+    margin-top: 5px;
+    display: flex;
+}
+.availability{
+    font-size: 14px;
+    font-weight: bold;
+    color: #737373;
+}
+.inStock{
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 5PX;
+    color: #23A6F0;
+    
+}
+.paragraf-isi{
+    font-size: 14px;
+    color:#858585;
+    left: 0.2px;
+}
+.paragraf{
+    line-height: 8px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+   
+    
+}
+
+.bulat{
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+   
+}
+.bulat1{
+    color: #23A6F0;
+}
+.bulat2{
+    color: #2DC071;
+}
+.bulat3{
+    color: #E77C40;
+}
+.bulat4{
+    color: #252B42;
+}
+
+.tombol{
+    display: flex;
+}
+.option{
+    margin-right: 20px;
+    
+}
+
+.simbol {
+    font-size: 16px;
+}
+.simbol i, .simbol svg{
+    margin-right: 8px;
+}
+
+.floating{
+    font-weight: 550;
+}
+.judul2{
+    margin-top: 100px;
+    margin-left: 200px;
+}
+.section-title {
+    font-weight: bold;
+}
+
+.garis2{
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+
+.baris1{
+    margin-left: 200px;
+    display: flex;
+    margin-top: 40px;
+}
+
+.card{
+    margin-right: 20px;
+    height: 440px;
+    margin-bottom: 40px;
+    border:none!important;
+}
+.card-img-top{
+    height: 280px;
+    width: 240px;
+    border:none !important;
+}
+.card-body h5{
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+.card-body a{
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    text-decoration: none;
+    color:#737373;
+}
+
+.harga3{
+    display: flex;
+}
+
+.hijau{
+    color:#23856D;
+}
+
+.abu{
+    color:#BDBDBD;
+}
+
+.judul2{
+    font-weight: bold;
+}
+
+.garis2{
+    width: 1000px;
+}
+
+
+
+
+
+@media (max-width: 991px) {
+    .header{
+        padding: 0rem 0%;
+        font-size: 12px !important;
+        width: 100% !important; 
+    }
+    .navbarLight{
+        background: var(--text-three-color);
+        font-size: 12px;
+        padding : 0px;
+        justify-content: center;
+        display: flex;
+        width: 100%;
+    }
+    .container a{
+        align-items: center;
+        margin-left: -89px;
+    }
+    .tengah{
+        padding: 0%;
+        margin-left: 0%;
+    }
+    .carousel, .thumbnail{
+        margin-left: 60px !important;
+    }
+    .judul2, .garis2, .card{
+        margin-left: 60px !important;
+    }
+
+    .baris1{
+        margin-left: -25px;
+    
+
+    }
+    .kotak1, .kotak2, .kotak3, .kotak4{
+        margin-left: -30px;
+        width: 225px !important;
+        max-height: 342px !important;
+        margin-right: 10px !important;
+    }
+    .card img{
+        height: 200px !important;
+        width: 189px;
+    }
+    .garis2{
+        width: 900px;
+    }
+    .judul, .star, .star h6, .harga, .stock, .paragraf {
+        font-size: 12px;
+    }
+    .harga{
+        margin-top: -5px;
+    }
+   .paragraf{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 12px;
+ 
+   }
+   .bulat1 i, .bulat2 i, .bulat3 i, .bulat4 i{
+    font-size: 30px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+   }
+   .gambar{
+    width: 80px !important;
+
+    
+   }
+
+}
+
+@media (max-width: 768px){
+    .header{
+        padding: 0rem 0%;
+        width: 100% !important; 
+        border: none;
+    }
+    .phone, .email, .follow, .medsos h6, .logoMedsos i{
+        font-size: 10px;
+    }
+    .phone, .email, .follow, .medsos{
+        margin-right: 10px;
+    }
+
+    .navbarLight{
+        padding : 0px;
+        justify-content: center;
+        display: flex;
+        width: 100%;
+    }
+    .bandage, .menu, .user, .search, .cart, .heart {
+        font-size: 10px !important;
+        margin-right: 10px;
+    }
+    .navbarLight h3{
+        font-size: 14px;
+    }
+    .container a, .container i, .container h6{
+        align-items: center;
+        font-size: 12px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+    }
+    .container a{
+        margin-left: 50px;
+    }
+    .tengah{
+        width: 100%;
+        padding: 0%;
+        margin-left: 0%;
+        margin-bottom: -100px;
+        
+    }
+    .carousel, .thumbnail{
+        margin-left: 60px !important;
+    }
+    .judul2, .garis2, .card{
+        margin-left: 60px !important;
+    }
+
+    .baris1{
+        margin-left: -25px;
+    
+
+    }
+    .kotak1, .kotak2, .kotak3, .kotak4{
+        margin-left: -30px;
+        width: 225px !important;
+        max-height: 342px !important;
+        margin-right: 10px !important;
+    }
+    .card img{
+        height: 200px !important;
+        width: 189px;
+    }
+    .garis2{
+        width: 900px;
+    }
+    .carousel-inner{
+        width: 250px !important;
+        height: 350px !important;
+        margin-top: -100px;
+    }
+    .keterangan{
+        height: 300px !important;
+    }
+    .body{
+        width: 100%;
+    }
+    .garis2{
+        width: 700px;
+    }
+    .navbar-nav {
+        visibility: none;
+    }
+
+}
+
+@media (max-width: 441px) {}
+
+@media (max-width: 556px){
+    .body{
+        width: 100%;
+    }
+    .header{
+        padding: 0rem 0%;
+        width: 100%!important;
+    }
+    .navbarDark{
+        margin-right: -30px;
+    }
+    .follow, .phone, .email, .medsos{
+        align-items: center;
+        font-size: 8px;
+        display: flex;
+    }
+    
+    .judul2{
+       align-items: center;
+    }
+
+    .tengah{
+        display: contents;
+    }
+    .section-title {
+        font-weight: bold;
+        
+    }
+    
+    .garis2{
+        margin-left: 100px;
+        margin-top: 20px;
+    }
+    
+    
+    .baris1{
+        margin-left: 20px;
+        display: contents;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .card{
+        position: center;
+        width: 100%;
+    }
+    .card{
+        margin-right: 10px;
+        height: 440px;
+        margin-bottom: 40px;
+        margin-top: 20px;
+        border:none!important;
+        margin-left: 10px;
+        height: 1000px;
+    }
+    .card-img-top{
+        height: 348px;
+        width: 427px;
+        border:none !important;
+    }
+    .card-body h5{
+        font-weight: bold;
+        font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 5px;
+    }
+    .card-body a{
+        font-weight: bold;
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        margin-left: 5px;
+        text-decoration: none;
+        color:#737373;
+    }
+    .kotak1, .kotak2, .kotak3, .kotak4{
+        width: 100% !important;
+        position: center;
+    }
+    .carousel-inner{
+        width: 500px;
+        margin-top: 20px;
+    }
+    .calorousel-item img{
+        width: 500px;
+        height: 400px;
+    }
+    
+    .judul{
+        margin-top: 500px;
+        
+    }
+    .thumbnail{
+        margin-top: -930px
+    }
+}
